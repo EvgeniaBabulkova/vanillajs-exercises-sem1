@@ -17,7 +17,7 @@ let guess = null;
 let attempts = 0;
 
 while (guess !== randomNumber) {
-    guess = parseInt(prompt(`Guess the number from 1 - 1000`))
+    guess = parseInt(prompt(`Guess the number from 1 - 100`))
 
     attempts++;
 

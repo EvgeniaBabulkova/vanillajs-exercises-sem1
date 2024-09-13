@@ -1,9 +1,12 @@
-/* General body styling */
 body {
   font-family: Helvetica;
   margin: 10px;
   background-color: #e0f7fa; /* Light blue background for the user page */
 }
+
+
+
+/* header styling -----------------------------------------------------------------------------------------------------*/
 a {
   text-decoration: none;
   color: #000;
@@ -45,7 +48,23 @@ a {
   top: 40px; 
 }
 
-/* Form styling */
+
+
+
+
+/* Hide elements---------------------------------------------------------------------------------------------- */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+
+
+
+/* Form styling----------------------------------------------------------------------------------------------------- */
 .signup-form {
   background-color: #ffffff; /* White background for the form */
   border: 1px solid #00796b; /* Dark green border */
@@ -74,19 +93,6 @@ input[type="password"].error {
   border-color: #d32f2f; /* Red border for error */
 }
 
-/* Button styling */
-button {
-  background-color: #004d40; /* Dark green background */
-  color: #ffffff; /* White text */
-  border: none; /* Remove border */
-  border-radius: 4px; /* Rounded corners */
-  padding: 10px 20px; /* Padding inside the button */
-  cursor: pointer; /* Pointer cursor on hover */
-}
-
-button:hover {
-  background-color: #00796b; /* Lighter green on hover */
-}
 
 /* Error message styling */
 .error {
@@ -102,12 +108,22 @@ button:hover {
   margin-top: 10px; /* Space above the success message */
 }
 
-/* Hide elements */
-.hidden {
-  display: none;
+
+
+
+
+/* Button styling ------------------------------------------------------------------------------------------------------*/
+button {
+  background-color: #004d40; /* Dark green background */
+  color: #ffffff; /* White text */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
-.visible {
-  display: block;
+button:hover {
+  background-color: #00796b; /* Lighter green on hover */
 }
+
 

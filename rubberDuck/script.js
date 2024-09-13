@@ -8,15 +8,14 @@
 let problemsArray = [];
 
 function addNewProblem() {
-    const newProblemText = document.getElementById("newProblemText").value; //omg
+    const newProblemText = document.getElementById("newProblemText").value;
     const newProblem = document.createElement("li");
-    newProblem.textContent = newProblemText;  //says to return the textContent of this element (and equals it to the new )
+    newProblem.textContent = newProblemText;  //says to return the textContent of this element (and equals it to the new text)
     newProblem.title = formatCurrentDate();   //this should show the date when each element was created - on hover
-
     document.getElementById("problemsList").appendChild(newProblem);
 
 
-    if (newProblemText.trim() === "") {   //if the newProblemText is empty, or trim() method listens for spaces then...
+    if (newProblemText.trim() === "") {   //if the newProblemText is empty  (+trim() method listens for spaces) then...
         return; //this stops executing the if statement if the condition is met
     }
 
@@ -26,11 +25,7 @@ function addNewProblem() {
     
     console.log("Updated localStorage data:", JSON.parse(localStorage.getItem("savedProblems"))); //every time the function runs i load the code that shows what we have saved
 
-
 }
-
-
-
 
 
 document.getElementById("addProblem").addEventListener("click", () => {
@@ -105,16 +100,15 @@ window.addEventListener("load", loadSavedProblems);
 
 
 // Extra Exercise 03.09
-// • HTML:
+// HTML:
 // • Create a <select> dropdown with several options representing different items.
 // • Add an empty <ul> element to serve as the list where items will be added or removed.
-
-// • CSS:
-// • Style the list and items for better visual representation.
-
-// • JavaScript:
+// CSS:
+// • Style the list and items for better visual representation. - i dont have time for this shit now...
+// JavaScript:
 // • Add an event listener to the <select> element that adds a new <li> item to the <ul> when an option is selected. 
 //   If the item already exists, it should be removed instead.
+//-->to finishoff later
 
 
 
@@ -141,7 +135,6 @@ window.onload = function () {
 //the - newProblem.title = new Date(); - gives the date on hover
 //if u create a function with the code on top as a constant d, u can
 //make constants for each element of the date and then add it with `date inside`
-
 
 
 
@@ -174,6 +167,7 @@ function formatCurrentDate() {
 
 
 //ASYNC EXERCISE - FORCE JOKE 10.09 ------------------------------------------------------------------------------------------------------------------------------
+//Add a delay to Mr. Ducks puns, to improve his timing.
 
 
 document.getElementById('force-answer-btn').addEventListener('click', async function() { 
@@ -203,7 +197,7 @@ document.getElementById('force-answer-btn').addEventListener('click', async func
 
 
 
-// Extra Exercises 10.09 -----------------------------------------------------------------------------------------------------------------------------------------
-// ▪ Finish the user page, with if statements, so all the custom validation works, and displays the error messages.
-// ▪ Add a delay to Mr. Ducks puns, to improve his timing. Add a Profanity filter to the users input field,
-// ▪ So whenever the user types something, that input is checked, by some simple string matching, and discarded if it contains foul language.
+// EXTRA Exercises 10.09 -----------------------------------------------------------------------------------------------------------------------------------------
+// Add a Profanity filter to the users input field,
+// So whenever the user types something, that input is checked, by some simple string matching, and discarded if it contains foul language.
+//-->to finishoff later

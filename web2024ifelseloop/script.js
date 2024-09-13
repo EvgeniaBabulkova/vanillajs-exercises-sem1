@@ -17,7 +17,7 @@ for (let i = 1; i <= 20; i++) {  // for (starting point, condition to loop until
 
 
     // Check if the number is even or odd and apply the appropriate class
-    if (i % 2 === 0) {   //% is the reminder - if there is no decimal reminder after you divide the i by 2, then the number is even (5%2 = 2.5 - there is a reminder here)
+    if (i % 2 === 0) {   //reminder - if there is no decimal reminder after you divide the i by 2, then the number is even (e.g 5%2 = 2.5 - there is a reminder here)
         divElement.classList.add("even")
     }
 

@@ -5,7 +5,7 @@
 import { Car } from "./car.js";
 import { Cat } from "./cat.js";
 
-// Exercise 1 - Create a javascript function that takes firstname and lastname as 2 parameters and
+// Create a javascript function that takes firstname and lastname as 2 parameters and
 // uses console.log() to output the person's name. Check that it works and is printet correctly
 
 function fullName(name1, name2) {
@@ -14,7 +14,7 @@ function fullName(name1, name2) {
 console.log(fullName('James', 'Nestor'));
 
 
-// Exercise 2 - Create a function that calculates the area of a rectangle. The function should return
+// Create a function that calculates the area of a rectangle. The function should return
 // the result. Test that it works
 
 function areaOfARectangle(a, b) {
@@ -23,7 +23,7 @@ function areaOfARectangle(a, b) {
 console.log(areaOfARectangle(5, 6));
 
 
-// Exercise 3 - Create a function that takes speed and time as 2 parameters and calculates and returns the distance. 
+// Create a function that takes speed and time as 2 parameters and calculates and returns the distance. 
 // Use the function to test that it works by using the 'log' again. Print out "You have travelled *x* km" where *x* is replaced by the result from the function.
 
 function calculateDistance(speed, time) {
@@ -33,7 +33,7 @@ const distance = calculateDistance(70, 2);
 console.log('You have traveled', distance, 'km')
 
 
-// Exercise 4 - Create an object called calculator with the name of the owner (eg. Your name) and
+// Create an object called calculator with the name of the owner (eg. Your name) and
 // modify your code so the 3 previous functions are attached to the object
 
 const calculator = {
@@ -52,19 +52,15 @@ console.log(calculator.areaOfARectangle(10, 3));
 console.log(calculator.calculateDistance(70, 2));
 
 
-//Exercise 5 - Adjust your code so that you can call the functions and test that they still work
-
-
-
 
 
 
 
 //EXERCISE CLASS 02.09----------------------------------------------------------------------------------------------------------------------------
 
-// Exercise 1 - Create a Cat class with name, color, breed
-// Exercise 2 - Create a constructor that takes 3 parameters to create an object with name, color, breed
-// Exercise 3 - Create a function/method that returns the cat's data
+// Create a Cat class with name, color, breed
+// Create a constructor that takes 3 parameters to create an object with name, color, breed
+// Create a function/method that returns the cat's data
 const cat1 = new Cat('Mimi', 'black', 'some breed');
 cat1.bio();
 
@@ -74,11 +70,15 @@ console.log(cat1.name);
 
 
 
+
+
+
+
 //EXERCISE CAR 02.09---------------------------------------------------------------------------------------------------------------------------
-// Exercise 1 - Define the Car class:
+// Define the Car class:
 //      Create a class named Car.
 //      Add a constructor that accepts make, model, and year as parameters and initializes these properties
-// Exeercise 2 - Add Methods:
+// Add Methods:
 //      getCarInfo method: This method should return a string containing the car's make, model, and year.
 //      start method: This method should set a property called isRunning to true and return a string indicating the car has started.
 //      stop method: This method should set the isRunning property to false and return a string indicating the car has stopped.
@@ -90,19 +90,22 @@ const start = car1.start();
 console.log(start);
 
 // const stop = car1.stop();
-// console.log(stop);
-// the 2 lines make the same thing as here:
+// console.log(stop);        // the 2 lines make the same thing as here:
 console.log(car1.stop());
 
-// Exercise 3 - Create Instances and Test Methods:
+
+// Create Instances and Test Methods:
 //      Create two instances of the Car class with different make, model, and year values.
 //      Call the getCarInfo, start, and stop methods on these instances and print the results to verify that everything works as expected.
-
 
 const car2 = new Car('make456', 'oldmodel', 1900);
 console.log(car2.getCarInfo());
 console.log(car2.start());
 console.log(car2.stop());
+
+
+
+
 
 
 
@@ -132,7 +135,7 @@ console.log(slicedArray)
 
 
 // ▪ Create 2 objects with firstname, lastname, email – values. Add the two objects to a
-    // new array. 'log' the array to verify. Also 'log' the first objects' email in a separate 'log'
+//    new array. 'log' the array to verify. Also 'log' the first objects' email in a separate 'log'
 
 
 class Object {
@@ -151,6 +154,11 @@ console.log(newArray)
 
 const firstEmail = newArray[0].email
 console.log(firstEmail)
+
+
+
+
+
 
 
 
@@ -201,7 +209,7 @@ newStudentSth.addAGrade(4);
 console.log(`This is NEW SOMETHING: ${addSth(newStudentSth, 333)}`)
 addSth(newStudentSth, 222)
 addSth(newStudentSth, 111)
-console.log(`that is ${newStudentSth.something}`)  //those are called template literals!!!
+console.log(`that is ${newStudentSth.something}`)  //those are called template literals
 console.log(newStudentSth)
 
 

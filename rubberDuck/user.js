@@ -1,4 +1,4 @@
-// Forms: Exercise
+// Forms: Exercise---------------------------------------------------------------------------------------------------------------------------------------------
 // ▪ Add a user button at the top right corner in the Header.
 // ▪ Redirecting the user to a user.html sub page.
 // ▪ Create a form, to be used for creating users on the page.
@@ -6,12 +6,14 @@
 // ▪ Atleast name, so we can get rid of the annoying popup each time we open the site.
 // ▪ What would we need to validate?
 // ▪ Lets create some JavaScript validation, and add custom error messages.
+// ▪ Finish the user page, with if statements, so all the custom validation works, and displays the error messages.
+
 
 
 const form = document.getElementById("signup-form");
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault(); // Prevent the default which is instant submit, and we want to validat first
+    e.preventDefault(); // Prevent the default which is instant submit, and we want to validate first
 
 
     const username = document.getElementById("username").value.trim();

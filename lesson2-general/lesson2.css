@@ -1,0 +1,18 @@
+/* lala */
+
+.box {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    background-color: red;
+  }
+
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}

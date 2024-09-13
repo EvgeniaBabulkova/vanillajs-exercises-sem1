@@ -1,0 +1,113 @@
+/* General body styling */
+body {
+  font-family: Helvetica;
+  margin: 10px;
+  background-color: #e0f7fa; /* Light blue background for the user page */
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Header styling */
+.site-header { 
+  border-bottom: 1px solid #ccc;
+  padding: .5em 1em;
+}
+
+/* Clear floats in the header */
+.site-header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Site identity styling */
+.site-identity h1 {
+  font-size: 1.5em;
+  margin: .7em 0 .3em 0;
+  display: inline-block;
+}
+
+.site-identity img {
+  max-width: 55px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+/* User button styling */
+.user-button {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: absolute;
+  right: 20px;
+  top: 40px; 
+}
+
+/* Form styling */
+.signup-form {
+  background-color: #ffffff; /* White background for the form */
+  border: 1px solid #00796b; /* Dark green border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the form */
+  max-width: 500px; /* Maximum width of the form */
+  margin: 20px auto; /* Center the form horizontally */
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 2px solid #004d40; /* Dark green stroke */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Padding inside the input fields */
+  margin-bottom: 10px; /* Space below the input fields */
+  width: 100%; /* Full width of the input fields */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Input field error styling */
+input[type="text"].error,
+input[type="email"].error,
+input[type="password"].error {
+  border-color: #d32f2f; /* Red border for error */
+}
+
+/* Button styling */
+button {
+  background-color: #004d40; /* Dark green background */
+  color: #ffffff; /* White text */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+  background-color: #00796b; /* Lighter green on hover */
+}
+
+/* Error message styling */
+.error {
+  color: #d32f2f; /* Red text for error messages */
+  font-size: 0.875em; /* Slightly smaller font size */
+  margin-bottom: 10px; /* Space below the error message */
+}
+
+/* Success message styling */
+#success-message {
+  color: #388e3c; /* Green text for success message */
+  font-size: 1em; /* Font size for the success message */
+  margin-top: 10px; /* Space above the success message */
+}
+
+/* Hide elements */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="site-identity">
+            <a href="index.html"><img src="img/ducky.svg" id="mrDucky" alt="Rubber Duck Logo"/></a>
+            <h1><a href="index.html">Rubber duck</a></h1>
+
+            
+            <!-- the user button -->
+            <a href="user.html" class="user-button"><button>Sign up</button></a>
+        </div>
+    </header> <br>
+
+
+    <form class="signup-form" id="signup-form">
+        <h3>Sign Up</h3>
+        
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <div class="error" id="username-error"></div>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <div class="error" id="email-error"></div>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <div class="error" id="password-error"></div>
+
+        
+        <button type="submit">Sign Up</button>
+        <div id="success-message"></div>
+
+    </form>
+
+
+
+    
+
+    <script src="user.js" type="module"></script>
+</body>
+</html>

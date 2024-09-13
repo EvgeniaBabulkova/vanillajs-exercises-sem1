@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubber duck - personal exercise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="site-identity">
+
+            <!-- logo and title -->
+            <a href="#"><img src="img/ducky.svg" id="mrDucky"/></a>
+            <h1><a href="#">Rubber duck</a></h1>
+
+            <!-- force joke -->
+            <button id="force-answer-btn">Force answer</button>
+            <div id="joke-container"></div>
+
+            
+            <!-- the login button -->
+            <a href="user.html" class="user-button"><button>Sign up</button></a>
+        
+            <!-- easter egg message -->
+            <div id="hiddenMessage" class="hidden">This is a secret, but mister duck also has problems, be kind!</div>
+
+        </div>
+    </header> <br>
+
+
+
+
+
+    <!-- greeting with your name, when the page loads -->
+    <p id="greeting"></p>
+
+    <!-- problems list -->
+    <div class="input-container">
+
+        <input type="text" id="newProblemText" placeholder="Write your problem">
+        <button id="addProblem">Save this problem!</button>
+        <ul id="problemsList"></ul>
+
+    </div>
+
+
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
+

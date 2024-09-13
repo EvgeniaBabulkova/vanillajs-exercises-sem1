@@ -9,6 +9,8 @@
 // Helle is a string
 // 8 is a number
 // Hint: You can use typeof to determine the type of a value
+// Hint: You can use typeof to determine the type of a value
+// Hint: You can use typeof to determine the type of a value
 
 
 let anArray = ['Peter', 7, 'Marianne', true, 'Helle', 8]
